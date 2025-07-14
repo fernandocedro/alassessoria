@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Boldonse&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.container-produtos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 60px 0 60px 0;
+}
+
+.card {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    text-align: center;
+    color: #555;
+}
+
+.btn-saibamais {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-saibamais:hover {
+    background-color: #ffffff;
+    color: #ff8800;
+    border: 1px solid #ff8800;
+}
+
+.certificacoes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.certificacoes-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 60px 0 60px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-container {
+      display: flex;
+      align-items: center;
+      margin: 0 210px 0 210px;
+    }
+
+    .frase-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        background-color: #f9f9f9; 
+        margin-top: 5%;
+    }
+
+    .frase-content {
+        font-family: "Funnel Sans", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 1.5;
+        max-width: 800px;
+        text-align: center;
+        font-size: 1.2rem;
+        color: #333;
+    }
+.laudos-container {
+    display: flex;
+    margin: 0px 200px 60px 200px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.laudos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  padding: 20px;
+  cursor: pointer;
+}
+
+.laudos-grid > div {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: justify;
+  border: #333 solid 1px;
+}
+
+.laudos-grid:hover > div:hover {
+  box-shadow: #979797 0px 0px 10px;
+}
+
+.laudos-titulos {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.laudos-titulos h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.laudos-titulos p {
+    font-size: 1rem;
+    text-align: center;
+    color: #555;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.linha-footer {
+    border-top: 1px solid #ff8800;
+    margin: 20px 0;
+}
+
+.footer-assinatura {
+    color: #fff;
+    background-color: #4e4e4e;
+    padding: 40px 0 40px 0;
+    
+}
+
+.link-assinatura-footer {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-assinatura a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.footer-assinatura a:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.logo-footer {
+    width: 90px;
+    height: auto;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
