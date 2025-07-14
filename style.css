@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Funnel Sans", sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 15%;
+}
+
+.container-social {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: #9B0305;
+    gap: 13px;
+    justify-content: space-between;
+    padding: 0 16%;
+}
+
+.telefone,
+.email {
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.fa-instagram, 
+.fa-square-facebook,
+.fa-tiktok {
+    color: white;
+    font-size: 20px;
+
+}
+
+.container-contato {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    text-transform: uppercase;
+}
+
+.container-geral {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 15% 0 15%;    
+  
+}
+
+.menu {
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu:hover {
+    color: #9B0305;
+    text-decoration: none;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #9B0305;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.linha {
+    width: 100%;
+    height: 3px;
+    background-color: #9B0305;
+    margin: 0 auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.swiper-pagination-bullet {
+    background-color: #fff;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #9B0305; 
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9B0305;
+  }
+  
+  .conteudo {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  .esquerda,
+  .direita {
+    flex: 1;
+  }
+  
+  .texto {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 100px 0 0;
+  }
+
+  .video-slide {
+    width: 70%;
+    height: 100%;
+  }
+  
+  .cards-index {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15% 0 15%;
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #5a5a5a;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    color: white;
+  }
+
+.nossosServicos_titulo {
+    font-size: 30px;
+    color: #5a5a5a;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+
+.nossos-serviços {
+    display: flex;
+    margin: 0% 20% 0 20%;
+    color: #9B0305;
+  }
+
+.imagem-servico {
+  width: 95%;
+  transition: transform 0.3s ease;
+}
+
+.imagem-servico:hover {
+  transform: scale(1.05);
+}
+
+
+.conheca-mais {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a1a1a1;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.container-conheca-mais {
+  margin: 0 1% 0 20%;
+}
+
+
+.img-saiba {
+  margin-right: 20%;
+  object-fit: cover;
+}
+
+.botaoSaibamais {
+  background-color: #9B0305;
+  width: 40%;
+  padding: 3%;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+}
+
+.botaoSaibamais:hover {
+  background-color: transparent;
+  color: #9B0305;
+  border: solid 2px #9B0305;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.botaoSaibamais-text {
+  text-decoration: none;
+  color: white;
+  padding-top: 3px;
+}
+
+/* Swiper de clientes */
+.mySwiper-clientes {
+  width: 100%;
+  margin:  0 auto;
+}
+
+/* Slides do Swiper de clientes */
+.mySwiper-clientes .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagens dos slides do Swiper de clientes */
+.mySwiper-clientes .swiper-slide img {
+  display: block;
+  width: 100px;   /* ajuste conforme necessário */
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+  /* Swiper de Testemunhos */
+.ltestemunhal {
+  width: 100%;
+  margin: 80px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 32px 16px;
+}
+
+.ltestemunhal .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   cursor: grab;
+}
+
+.ltestemunhal .swiper-slide:active {
+  cursor: grabbing; /* mão fechada ao clicar */
+}
+
+.ltestemunhal blockquote {
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+}
+
+.ltestemunhal footer {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #9B0305;
+  font-style: normal;
+}
+
+.swiper-pagination-ltestemunhal .swiper-pagination-bullet {
+  background: #000000;
+}
+
+.swiper-pagination-ltestemunhal .swiper-pagination-bullet-active {
+  background: #9B0305;
+}
+
+.ltestemunhal .user img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%; /* Deixa a imagem redonda */
+  display: block;
+  margin: 10px auto 10px auto; /* Centraliza e dá espaço abaixo */
+}
+
+.fa-star {
+  color: #f1e20f;
+}
+
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 15% 10% 15%;
+  gap: 20px;
+}
+
+.autor {
+  text-decoration: none;
+  color: thistle;
+}
+
+
+  .container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #9B0305;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+    gap: 7px;
+  }
+
+
+
+  .menu2_link {
+    text-decoration: none;
+    color: #9B0305;
+    font-size: 18px;
+  }
+
+  .menu2 {
+    
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    font-size: 200x;
+  }
+
+
+  .breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    background-image: url(./img/breadcrumb.png);
+  }
+
+  .breadcrumb-current {
+    color: #9B0305;
+    font-weight: bold;
+    margin: 100px;
+  }
+
+  .container-quem-somos {
+    display: flex;
+    background-color: #fff;
+    padding: 3% 15% 5% 15%;
+    align-items: center;
+  }
+
+  .container-texto-quem-somos {
+    padding: 0 50px 0 50px;
+  }
+
+  .logo-quem-somos {
+    width: 100%;
+    
+  }
+
+  strong {
+    font-weight: bold;
+    color: #9B0305;
+  }
+
+  
+  .pelicula-automotiva {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 5% 15% 5% 15%;
+    background-color: #fff;
+    gap: 20px;
+  }
+
+  .texto-pelicula-automotiva {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+  }
+
+  .texto-pelicula-automotiva h2 {
+    font-size: 25px;
+    color: #9B0305;
+    margin-bottom: 10px;
+  }
+
+  .frase-orcamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 30px 15% 30px 15%;
+    gap: 10px;
+    height: 300px;
+    background-color: #9B0305;
+    color: #fff;
+  }
+
+  .orcamento {
+    background-color: #fff;
+    color: #9B0305;
+    padding: 10px;
+    width: 40%;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  .orcamento:hover {
+    background-color: #9B0305;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+
+.link-orcamento {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+  }
+
+ .container-texto-final {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 15% 100px 15%;
+    background-color: #fff;
+  }
+
+  .container-texto-final h2 {
+    font-size: 25px;
+    color: #9B0305;
+    margin-bottom: 10px;
+  }
+
+  .texto-final p {
+    font-size: 16px;
+    color: #333;
+  }
+
+ 
+ .galeria {
+  display: flex;
+  background-color: #fff;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.galeria img {
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.galeria img:hover {
+  transform: scale(1.03);
+}
+
+.popup {
+  display: none; /* escondido por padrão */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.popup p {
+  color: #fff;
+  margin-top: 15px;
+  font-size: 1.1em;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pelicula-automotiva-trabalhos {
+    display: flex;
+    padding: 5% 0 0 20%;
+    background-color: #fff;
+    gap: 20px;
+}
+
+.container-contato-geral {
+  background-color: #fff;
+}
+
+.container-contato-pg {
+    display: flex;
+    margin: 0 50% 0 15%;
+    background-color: #fff;
+}
+
+.container-texto {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 0 90px 0 0;
+   
+}
+
+.container-send-mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+#nome, 
+#email,
+#mensagem {
+  width: 350px;
+}
+
+#send {
+  background-color: #9B0305;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container-contato-final {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.container-contato-final-texto {
+  display: flex;
+  margin: 100px 15% 40px 15%;
+  gap: 220px;
+}
