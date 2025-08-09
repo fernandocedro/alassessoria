@@ -6,22 +6,98 @@
     margin: 0;
 }
 
-.logo {
-    width: 90px;
-    height: auto;
-    background-color: #f0f0f0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo  {
+   font-weight: 500;
+   font-size: 25px;
+   color: #ff8800;
 }
 
-.container {
+
+.carousel-item img {
+      width: 100%;
+      height: 70vh; 
+      object-fit: cover; 
+    }
+
+    
+.carousel-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70vh;
+    }
+
+    
+.carousel-caption-left {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      transform: translateY(-50%);
+      text-align: left;
+      padding: 20px;
+      
+    }
+
+.container-header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin: 15px 230px 15px 230px;
     align-items: center;
-    justify-content: center;
-    height: 50vh;
+}
+
+.btn-color {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 13px 20px 13px 20px;
+    border-radius: 11px;
+    border: 1px solid transparent;
+    font-weight: 600;
+}
+
+.btn-color:hover {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.btn-custom {
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+      border: 2px solid transparent; /* Adiciona uma borda transparente por padrão para evitar o "salto" */
+     
+    }
+
+.btn-custom:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+      background-color: transparent; /* Torna o fundo transparente no hover */
+      border-color: #ffffff; /* Adiciona a borda branca no hover */
+    }
+    
+    /* Classe para o laranja de bombeiro */
+.text-firefighter-orange {
+      color: #ff4500;
+    }
+
+.link-menu{
+    text-decoration: none;
+    color: #333;
+}
+
+.link-menu:hover {
+    color: #ff8800;
+}
+
+
+.container-menu {
+    display: flex;
+    gap: 60px;
+}
+
+.menu-geral {
+    margin: 0 180px 0 180px;
 }
 
 .container-produtos {
@@ -62,14 +138,16 @@
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff8800;
+    border: 1px solid #ff8800;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+   
 }
 
 .btn-saibamais:hover {
-    background-color: #ffffff;
+    background-color: transparent;
     color: #ff8800;
     border: 1px solid #ff8800;
 }
@@ -122,8 +200,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 30px;
-        background-color: #f9f9f9; 
+        padding: 60px;
+        background-color: #3d3d3d; 
         margin-top: 5%;
     }
 
@@ -135,7 +213,7 @@
         max-width: 800px;
         text-align: center;
         font-size: 1.2rem;
-        color: #333;
+        color: #ffffff;
     }
 .laudos-container {
     display: flex;
@@ -158,7 +236,7 @@
   padding: 15px;
   border-radius: 8px;
   text-align: justify;
-  border: #333 solid 1px;
+  background-color: #e6e6e6;
 }
 
 .laudos-grid:hover > div:hover {
