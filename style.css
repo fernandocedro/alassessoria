@@ -265,6 +265,10 @@
     
 }
 
+.laudos {
+    background-color: #6c757d;
+}
+
 .laudos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -277,11 +281,11 @@
   padding: 15px;
   border-radius: 8px;
   text-align: justify;
-  background-color: #e6e6e6;
+  background-color: #b5b6b6;
 }
 
 .laudos-grid:hover > div:hover {
-  box-shadow: #979797 0px 0px 10px;
+  box-shadow: #494949 0px 0px 20px;
 }
 
 .laudos-titulos {
@@ -375,6 +379,7 @@
 .visao-missao {
     display: flex;
     margin: 50px 200px 50px 200px;
+    gap: 50px;
 }
 
 .historia-al {
@@ -398,6 +403,7 @@
     box-shadow: 3px 3px 20px #888888;
     border-radius: 2%;
     padding: 15px;
+    bottom: 0;
 }
 
 .btn-treino {
@@ -407,6 +413,8 @@
     border-radius: 10px;
     text-decoration: none;
     border: 1px solid transparent;
+    position: absolute;
+   
 }
 
 .btn-treino:hover {
