@@ -376,6 +376,16 @@
     width: 20%;
 }
 
+
+.row {
+   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    /* margin-left: calc(-.5 * var(--bs-gutter-x)); */
+}
 .visao-missao {
     display: flex;
     margin: 50px 200px 50px 200px;
@@ -390,6 +400,49 @@
     display: flex;
     align-items: center;
     padding:  0 200px 0 200px;
+}
+
+#lightgallery .col-md-4 {
+    display: flex; /* Para centralizar o item dentro da coluna */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Espaçamento entre as imagens */
+}
+
+#lightgallery a {
+    display: block; /* Garante que o link ocupe o espaço */
+    width: 200px;   /* Largura desejada para a imagem quadrada */
+    height: 200px;  /* Altura desejada para a imagem quadrada */
+    overflow: hidden; /* Garante que a imagem não saia do container quadrado */
+    border-radius: 8px; /* Bordas levemente arredondadas, opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave, opcional */
+    transition: transform 0.2s ease-in-out; /* Efeito de transição ao passar o mouse */
+}
+
+#lightgallery a:hover {
+    transform: scale(1.03); /* Leve zoom ao passar o mouse */
+}
+
+#lightgallery img {
+    width: 100%;  /* Faz a imagem preencher 100% da largura do contêiner 'a' */
+    height: 100%; /* Faz a imagem preencher 100% da altura do contêiner 'a' */
+    object-fit: cover; /* Recorta a imagem para preencher o quadrado sem distorcer */
+    display: block; /* Remove possíveis espaços em branco abaixo da imagem */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #lightgallery a {
+        width: 150px; /* Reduz o tamanho das imagens em telas menores */
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    #lightgallery a {
+        width: 120px; /* Reduz ainda mais em telas muito pequenas */
+        height: 120px;
+    }
 }
 
 .treinamento-container{
@@ -670,3 +723,4 @@
         border-radius: 0 0 15px 15px; /* Cantos arredondados na parte inferior em telas pequenas */
     }
 }
+
