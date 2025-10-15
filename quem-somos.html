@@ -12,19 +12,29 @@
 </head>
 <body>
   <!-- Simulação de um Header para contexto -->
-  <header class="container-header">
+ <header class="container-header">
     <div class="logo">AL ASSESSORIA</div>
-      <div class="container-menu">
+       <div class="container-menu">
         <nav><a href="index.html" class="link-menu">Home</a></nav>
         <nav><a href="quem-somos.html" class="link-menu">Quem somos</a></nav>
         <nav><a href="treinamentos.html" class="link-menu">Treinamentos</a></nav>
         <nav><a href="clientes.html" class="link-menu">Clientes</a></nav>
         <nav><a href="contato.html" class="link-menu">Contato</a></nav>
-      </div>
-      <div class="icons-head">
+    </div>
+
+    <span class="menu-toggle" id="menu-toggle-button">&#9776;</span>
+    
+    <nav id="menu-mobile" class="menu-escondido">
+        <nav><a href="index.html" class="link-menu">Home</a></nav>
+        <nav><a href="quem-somos.html" class="link-menu">Quem somos</a></nav>
+        <nav><a href="treinamentos.html" class="link-menu">Treinamentos</a></nav>
+        <nav><a href="clientes.html" class="link-menu">Clientes</a></nav>
+        <nav><a href="contato.html" class="link-menu">Contato</a></nav>
+    </nav> 
+    <div class="icons-head">
         <i class="fa-brands fa-square-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
-      </div>
+    </div>
   </header>
   <section class="breadcrumbs">
         <p>Home > Quem Somos </p>
@@ -40,7 +50,7 @@
           e garantia jurídica.
         </p>
     </div>
-    <img  src="image/logo-2.png">
+    <img class="logoOficial" src="image/logo-2.png">
   </section>
 
   <section class="visao-missao">
@@ -234,5 +244,5 @@
             speed: 500,
         });
     </script>
-
+  <script src="script.js"></script>
     </body>

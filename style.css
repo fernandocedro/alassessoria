@@ -42,6 +42,15 @@
       object-fit: cover; 
     }
 
+    .menu-escondido {
+      display: flex;
+      flex-direction: column;
+      background-color: #d1d1d1;
+      padding: 10px;
+      align-items: end;
+      display: none;
+    }   
+
     
 .carousel-overlay {
       background-color: rgba(0, 0, 0, 0.4);
@@ -103,6 +112,7 @@
 .text-firefighter-orange {
       color: #ff4500;
     }
+
 
 .link-menu{
     text-decoration: none;
@@ -430,6 +440,10 @@
     display: block; /* Remove possíveis espaços em branco abaixo da imagem */
 }
 
+    .menu-toggle {
+        display: none;
+    }
+
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     #lightgallery a {
@@ -711,16 +725,287 @@
     color: #4e4e4e;
 }
 
-/* Media Query para responsividade em telas menores */
-@media (max-width: 992px) {
-    .contact-container {
+
+
+@media (max-width: 1024px) {
+    .menu-toggle {
+    display: none;
+}
+ .container-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 60px 15px 60px;
+    align-items: center;
+}
+.logoOficial {
+    display: flex;
+    width: 90%;
+    height: 100%;
+}
+.visao-missao {
+    display: flex;
+    margin: 50px 90px 50px 50px;
+    gap: 50px;
+}
+.treinamento-container {
+        display: flex;
+        margin: 50px 50px 50px 25px;
+        gap: 20px;
+        background-color: transparent;
+    }
+    .breadcrumbs p {
+    margin: 0 0 0 120px;
+}
+    .fale-conosco-txt {
+        margin: 0px 200px 0 500px;
+        padding: 30px 0 0 0;
+    }
+    .clinte {
+    display: flex;
+    margin: 20px 5px 20px 5px;
+    gap: 20px;
+}
+.swiper-container {
+    display: flex;
+    align-items: center;
+    margin: 0 150px 0 150px;
+}
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 60px 15px 60px;
+        align-items: center;
+    }
+    .container-menu {
+        display: none;
+    }
+
+    .icons-head {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* === CORREÇÃO: ADICIONA A LÓGICA DE EXIBIÇÃO DO MENU MOBILE === */
+    #menu-mobile {
+        display: none; /* Oculta o menu por padrão */
+        position: absolute;
+        top: 60px; /* Ajuste para a altura do seu header */
+        right: 60px;
+        width: 50%; /* Define a largura do menu */
+        background-color: #d1d1d1;
+        z-index: 1000;
         flex-direction: column;
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: right;
     }
-    .contact-info {
-        padding: 40px;
+
+    #menu-mobile.visivel {
+        display: flex; /* Exibe o menu quando a classe 'visivel' é adicionada pelo JS */
     }
-    .map-container iframe {
-        border-radius: 0 0 15px 15px; /* Cantos arredondados na parte inferior em telas pequenas */
+    /* ================================================================ */
+
+    .swiper-container {
+        display: flex;
+        align-items: center;
+        margin: 0 1px 0 1px;
+    }
+
+    .laudos-container {
+        display: flex;
+        margin: 0px 20px 60px 20px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .breadcrumbs p {
+        margin: 0 0 0 62px;
+        
+    }
+    .quem-somos {
+        display: flex;
+        padding: 50px 50px 50px 50px;
+        gap: 20px;
+    }
+    .logoOficial {
+        width: 80%;
+        height: 100%;
+    }
+    .quem-somos {
+        display: flex;
+        padding: 50px 50px 50px 50px;
+        gap: 20px;
+    }
+    .treinamento-container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0px 50px 0px;
+        gap: 20px;
+        background-color: transparent;
+    }
+    .fale-conosco-txt {
+        margin: 0px 3px 0 20px;
+        padding: 50px 0 0 0;
+    }
+    .fale-whats {
+        background-image: url("image/fale-whats.webp");
+        background-repeat: no-repeat;
+        height: 300px;
+        color: #000000;
+        background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value (0 to 1) for transparency */
+        background-blend-mode: lighten; /* This will make the image transparent */
+    }
+    .fa-square-instagram, .fa-square-whatsapp {
+        font-size: 50px;
+        text-decoration: none;
+        color: #020202;
+    }
+    .clinte {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 5px 20px 5px;
+        gap: 20px;
     }
 }
 
+
+@media (max-width: 425px) {
+    .container-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 30px 15px 30px;
+    align-items: center;
+}
+.menu-toggle {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+}
+    .swiper-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 1px 0 1px;
+    }
+    .laudos-grid {
+        /* Muda para 1 coluna */
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+    background-color: #333;
+    color: white;
+    padding: 70px 0 70px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.col-md-5 {
+    margin: 20px 0 0 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 25px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color);
+}
+.carousel-caption-left {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    text-align: left;
+    padding: 20px;
+    max-width: 90%;
+} 
+    .d-md-block {
+        display: block !important;
+}
+
+
+.container-produtos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0 0 0 0;
+}
+#menu-mobile {
+    display: none; 
+    position: absolute;
+    top: 10%;
+    width: 50%;
+    z-index: 100;
+    padding: 10px 30px 10px 30px;
+    right: 10px;
+    text-align: right;
+}
+#menu-mobile.visivel {
+    display: block; 
+}
+.img-instrutor {
+    width: 90%;
+    height: auto;
+}
+.frase-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #3d3d3d; 
+    margin-top: 5%;
+}
+    .quem-somos {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px 50px 50px;
+        gap: 20px;
+}
+.visao-missao {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 90px 50px 50px;
+        gap: 50px;
+    }
+    .historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px 0 50px;
+}
+.historia-al {
+    width: 50%;
+}
+    .breadcrumbs p {
+        margin: 0 0 0 34px;
+    }
+    .testemunhal img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+    }
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+    padding: 80px 20px;
+}
+.map-container {
+    display: none;
+}
+}

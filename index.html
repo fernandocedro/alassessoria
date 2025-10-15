@@ -13,18 +13,29 @@
   <!-- Simulação de um Header para contexto -->
   <header class="container-header">
     <div class="logo">AL ASSESSORIA</div>
-      <div class="container-menu">
+       <div class="container-menu">
         <nav><a href="index.html" class="link-menu">Home</a></nav>
         <nav><a href="quem-somos.html" class="link-menu">Quem somos</a></nav>
         <nav><a href="treinamentos.html" class="link-menu">Treinamentos</a></nav>
         <nav><a href="clientes.html" class="link-menu">Clientes</a></nav>
         <nav><a href="contato.html" class="link-menu">Contato</a></nav>
-      </div>
-      <div class="icons-head">
+    </div>
+
+    <span class="menu-toggle" id="menu-toggle-button">&#9776;</span>
+    
+    <nav id="menu-mobile" class="menu-escondido">
+        <nav><a href="index.html" class="link-menu">Home</a></nav>
+        <nav><a href="quem-somos.html" class="link-menu">Quem somos</a></nav>
+        <nav><a href="treinamentos.html" class="link-menu">Treinamentos</a></nav>
+        <nav><a href="clientes.html" class="link-menu">Clientes</a></nav>
+        <nav><a href="contato.html" class="link-menu">Contato</a></nav>
+    </nav> 
+    <div class="icons-head">
         <i class="fa-brands fa-square-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
-      </div>
+    </div>
   </header>
+  
 
    <!-- Início do Carrossel com a correção de layout -->
   <div id="carouselExampleIndicators" class="carousel slide  position-relative" data-bs-ride="carousel" data-bs-interval="10000">
@@ -36,9 +47,9 @@
       <!-- Primeiro Slide -->
       <div class="carousel-item active ">
         <img src="image/slide01.png" class="d-block w-100" alt="Primeiro Slide com texto e botoes">
-        <div class="carousel-overlay "></div>
+        <div class="carousel-overlay"></div>
         <div class="carousel-caption-left d-none d-md-block">
-          <h5 class="display-4 fw-bold mb-2 text-firefighter-orange ">Treinamento e Formação</h5>
+          <h5 class="display-4 fw-bold mb-2 text-firefighter-orange">Treinamento e Formação</h5>
           <p class="h6 mb-4 text-white">Texto descritivo do primeiro slide, com detalhes sobre o treinamento para brigada de emergência.</p>
           <button class="btn-color">
             Saiba Mais!
@@ -130,7 +141,7 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
        </div>
-       <img src="image/instrutor.png" alt="">
+       <img src="image/instrutor.png" alt="intrutor de treinamentos" class="img-instrutor">
   </section>       
   <section class="frase-container">
     <div class="frase-content">
@@ -160,13 +171,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h5>Sobre nós</h5>
+                <h5 class="mb-4">Sobre nós</h5>
                 <hr class="linha-footer">
                 <p>AL Assessoria é uma empresa especializada em treinamentos e consultoria em segurança do trabalho, oferecendo soluções personalizadas para empresas de diversos setores.</p>
                 <img src="image/logo.png" alt="Logo AL Assessoria" class="logo-footer">
               </div>
             <div class="col-md-4 ">
-                <h5>menu</h5>
+                <h5 class="mb-4">menu</h5>
                 <hr class="linha-footer">
                 <nav><a href="index.html" class="link-menu-footer">Home</a></nav>
                 <nav><a href="quem-somos.html" class="link-menu-footer">Quem somos</a></nav>
@@ -175,7 +186,7 @@
                 <nav><a href="contato.html" class="link-menu-footer">Contato</a></nav>
             </div>
             <div class="col-md-4">
-                <h5>Contato</h5>
+                <h5 class="mb-4">Contato</h5>
                 <hr class="linha-footer">
                 <P><i class="fa-solid fa-envelope"></i> alex@alassessorias.com.br</P>
                 <p><i class="fa-solid fa-phone"></i> (15) 99150-5861</p>
@@ -213,9 +224,10 @@
     });
   </script>
 
-
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    
     </body>
